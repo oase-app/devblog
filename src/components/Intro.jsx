@@ -53,7 +53,7 @@ export function Intro() {
         <span className="text-teal-300">for everyone</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Oase is a new digital tool created to support your community. It's where you can communicate and organise your work.
+        Oase is a new digital tool created to support your community. It&apos;s where you can communicate and organise your work.
       </p>
       <p className="mt-4 text-sm/6 text-gray-300">
         This is our dev blog.
