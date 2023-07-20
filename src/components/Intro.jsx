@@ -4,13 +4,14 @@ import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
 
-function BookIcon(props) {
+function AppIcon(props) {
   return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M7 3.41a1 1 0 0 0-.668-.943L2.275 1.039a.987.987 0 0 0-.877.166c-.25.192-.398.493-.398.812V12.2c0 .454.296.853.725.977l3.948 1.365A1 1 0 0 0 7 13.596V3.41ZM9 13.596a1 1 0 0 0 1.327.946l3.948-1.365c.429-.124.725-.523.725-.977V2.017c0-.32-.147-.62-.398-.812a.987.987 0 0 0-.877-.166L9.668 2.467A1 1 0 0 0 9 3.41v10.186Z" />
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
     </svg>
   )
 }
+
 
 function GitHubIcon(props) {
   return (
@@ -44,7 +45,7 @@ export function Intro() {
   return (
     <>
       <div>
-        <Link href="https://oase.app">
+        <Link href="/">
           <Logo className="inline-block h-12 w-auto" />
         </Link>
       </div>
@@ -56,12 +57,14 @@ export function Intro() {
         Oase is a new digital tool created to support your community. It&apos;s where you can communicate and organise your work.
       </p>
       <p className="mt-4 text-sm/6 text-gray-300">
-        This is our dev blog.
+        This is our changelog.
       </p>
-      <SignUpForm />
+      {
+        //<SignUpForm />
+      }
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="https://twitter.com/our_oase" icon={TwitterIcon} compact large>
-          @our_oase
+        <IconLink href="https://oase.app" icon={AppIcon} compact large>
+          oase.app
         </IconLink>
         <IconLink href="https://github.com/oase-app/releases" icon={GitHubIcon} className="flex-none">
           GitHub
